@@ -32,6 +32,9 @@ while True:
     
     if sayac==1:
         print("döngü bitti")
+        time.sleep(2)
+        browser.close()
         break
     else:
         sayac+=1
+        browser.close()
