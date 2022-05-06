@@ -3,7 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-
 sayac = 1
 tekrar = 5
 def bot(x,y):
@@ -39,4 +38,5 @@ def bot(x,y):
         else:
             x+=1
             browser.close()
+            
 bot(sayac,tekrar)
