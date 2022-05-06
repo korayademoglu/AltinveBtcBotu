@@ -6,7 +6,7 @@ import time
 
 sayac = 1
 tekrar = 5
-def bot():
+def bot(x,y):
     while True:
         browser = webdriver.Chrome()
 
@@ -31,12 +31,12 @@ def bot():
         aramaClick.send_keys(Keys.ENTER)
         time.sleep(1)
 
-        if sayac==tekrar:
+        if x==y:
             print("döngü bitti")
             time.sleep(2)
             browser.close()
             break
         else:
-            sayac+=1
+            x+=1
             browser.close()
-bot()
+bot(sayac,tekrar)
