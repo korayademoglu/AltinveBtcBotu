@@ -5,6 +5,7 @@ import time
 
 
 sayac = 1
+tekrar = 5
 
 while True:
     browser = webdriver.Chrome()
@@ -30,7 +31,7 @@ while True:
     aramaClick.send_keys(Keys.ENTER)
     time.sleep(1)
     
-    if sayac==1:
+    if sayac==tekrar:
         print("döngü bitti")
         time.sleep(2)
         browser.close()
